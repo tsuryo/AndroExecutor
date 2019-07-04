@@ -10,6 +10,29 @@ Using ThreadPool is easy with AndroExecutor - Android library for easy multi-thr
 * Init AndroExecutor and run.
 
 # Usage
+
+Use:
+```
+private void generateFiles() {
+    for (int i = 0; i < 150; i++) {
+        /**
+         * Init the task that will run on the UI/Main Thread
+         * Using UITask.class
+         * */
+        UITask uiTask = new UpdateTvTask(mTv, "Started");
+        /**
+         * Init the task that will run on a worker thread/ background
+         * Using BackgroundTask.class
+         * */
+        BackgroundTask bgTask = new GenerateFileTask(this,
+                "file: " + i, uiTask);
+        /**
+         * Run in background
+         * */
+        mAndroExecutor.runOnWorker(bgTask);
+    }
+}
+```
 Implement your own BackgroundTask:
 ```
 public class GenerateFileTask extends BackgroundTask {
@@ -61,28 +84,6 @@ public class UpdateTvTask extends UITask {
         String text = mTv.getText().toString()
                 + ", " + mText;
         mTv.setText(text);
-    }
-}
-```
-Use:
-```
-private void generateFiles() {
-    for (int i = 0; i < 150; i++) {
-        /**
-         * Init the task that will run on the UI/Main Thread
-         * Using UITask.class
-         * */
-        UITask uiTask = new UpdateTvTask(mTv, "Started");
-        /**
-         * Init the task that will run on a worker thread/ background
-         * Using BackgroundTask.class
-         * */
-        BackgroundTask bgTask = new GenerateFileTask(this,
-                "file: " + i, uiTask);
-        /**
-         * Run in background
-         * */
-        mAndroExecutor.runOnWorker(bgTask);
     }
 }
 ```
