@@ -77,6 +77,8 @@ public class MainActivity extends AppCompatActivity
              * Run in background
              * */
             mAndroExecutor.runOnWorker(bgTask);
+            if (i >= 50)
+                mAndroExecutor.stopAll(); // stop the tasks and shutdown (may need to respond to interrupts)
         }
     }
 
