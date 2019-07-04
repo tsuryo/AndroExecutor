@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroExecutor.iml" filepath="$PROJECT_DIR$/AndroExecutor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androthread/androthread.iml" filepath="$PROJECT_DIR$/androthread/androthread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androexecutor/androexecutor.iml" filepath="$PROJECT_DIR$/androexecutor/androexecutor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
