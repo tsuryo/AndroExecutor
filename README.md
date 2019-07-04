@@ -1,3 +1,5 @@
+[![Release](https://jitpack.io/v/tsuryo/AndroExecutor.svg)](https://jitpack.io/#tsuryo/AndroExecutor)
+
 # AndroExecutor
 Using ThreadPool is easy with AndroExecutor - Android library for easy multi-threading in Android.
 
