@@ -13,7 +13,7 @@ Using ThreadPool is easy with AndroExecutor - Android library for easy multi-thr
 
 Use:
 ```
-private void generateFiles() {
+void generateFiles() {
     for (int i = 0; i < 150; i++) {
         /**
          * Init the task that will run on the UI/Main Thread
@@ -30,6 +30,9 @@ private void generateFiles() {
          * Run in background
          * */
         mAndroExecutor.runOnWorker(bgTask);
+	//Stop example
+        if (i >= 50)
+            mAndroExecutor.stopAll(); // stop the tasks and shutdown (may need to respond to interrupts)
     }
 }
 ```
