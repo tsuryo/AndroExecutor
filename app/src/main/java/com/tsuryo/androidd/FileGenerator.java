@@ -17,7 +17,7 @@ import java.io.OutputStreamWriter;
  * Create txt files in a loop for the example
  */
 
-class FileCreator {
+class FileGenerator {
     boolean generate(Context context,
                      String sFileName, String sBody) {
         try {

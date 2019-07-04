@@ -1,7 +1,6 @@
 package com.tsuryo.androidd;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.tsuryo.androthread.AndroExecutor;
 import com.tsuryo.androthread.BackgroundTask;
@@ -31,8 +30,7 @@ public class FileCreateTask extends BackgroundTask {
          * update ui with the initialized ui task
          * */
         AndroExecutor.getInstance().runOnUI(getUiTask());
-        if (new FileCreator().generate(mContext, mFileName, mFileName)) {
-            Log.d("FileCreateTask", mFileName);
+        if (new FileGenerator().generate(mContext, mFileName, mFileName)) {
             /*
              * Update ui with new text
              * */
