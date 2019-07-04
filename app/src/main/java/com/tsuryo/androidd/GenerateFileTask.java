@@ -9,16 +9,16 @@ import com.tsuryo.androthread.UITask;
 /**
  * Created by Tsur Yohananov on 2019-07-04.
  * <p>
- * FileCreateTask is supposed to run on a background thread
+ * GenerateFileTask is supposed to run on a background thread
  */
 
-public class FileCreateTask extends BackgroundTask {
+public class GenerateFileTask extends BackgroundTask {
     private final Context mContext;
     private final String mFileName;
 
-    FileCreateTask(Context context,
-                   String fileName,
-                   UITask uiTask) {
+    GenerateFileTask(Context context,
+                     String fileName,
+                     UITask uiTask) {
         super(uiTask);
         mContext = context;
         mFileName = fileName;

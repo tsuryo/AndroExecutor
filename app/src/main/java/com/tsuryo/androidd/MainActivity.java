@@ -62,18 +62,20 @@ public class MainActivity extends AppCompatActivity
 
     private void generateFiles() {
         for (int i = 0; i < 150; i++) {
-            /*
+            /**
              * Init the task that will run on the UI/Main Thread
              * Using UITask.class
              * */
             UITask uiTask = new UpdateTvTask(mTv, "Started");
-            /*
+            /**
              * Init the task that will run on a worker thread/ background
              * Using BackgroundTask.class
              * */
-            BackgroundTask bgTask = new FileCreateTask(this,
+            BackgroundTask bgTask = new GenerateFileTask(this,
                     "file: " + i, uiTask);
-
+            /**
+             * Run in background
+             * */
             mAndroExecutor.runOnWorker(bgTask);
         }
     }
