@@ -1,14 +1,11 @@
 # AndroExecutor
 Using ThreadPool is easy with AndroExecutor - Android library for easy multi-threading in Android.
 
-### Prerequisites
-Android 5.0+ API 21+
-
 # Features
-
-*Easy to do heavy work concurrently.
-*Implement Your Own BackgroundTask, UITask.
-*Init AndroExecutor and run.
+* AndroExecutor is a android library that makes concurrency easy for you, using Executors.newCachedThreadPool(), Runnable, Handler.
+* Easy to do heavy work concurrently.
+* Implement Your Own BackgroundTask, UITask.
+* Init AndroExecutor and run.
 
 # Usage
 Implement your own BackgroundTask:
