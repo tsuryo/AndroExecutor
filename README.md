@@ -4,7 +4,7 @@
 # AndroExecutor
 Using ThreadPool is easy with AndroExecutor - Android library for easy multi-threading in Android.
 
-<img width="400" alt="Android multithreading" src="https://user-images.githubusercontent.com/42518244/83361339-f0df3700-a390-11ea-9f81-1cc6a10fe998.gif"> 
+<img width="350" alt="Android multithreading" src="https://user-images.githubusercontent.com/42518244/83361339-f0df3700-a390-11ea-9f81-1cc6a10fe998.gif"> 
 
 # Features
 * AndroExecutor is an android library that makes concurrency easy for you, using Executors.newCachedThreadPool(), Runnable, Handler.
