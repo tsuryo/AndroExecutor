@@ -1,4 +1,4 @@
-package com.tsuryo.androexecutor;
+package com.tsuryo.androidd;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
