@@ -1,5 +1,5 @@
-[![](https://jitpack.io/v/tsuryo/AndroExecutor.svg)](https://jitpack.io/#tsuryo/AndroExecutor)
 
+[![](https://jitpack.io/v/tsuryo/AndroExecutor.svg)](https://jitpack.io/#tsuryo/AndroExecutor)
 
 # AndroExecutor
 Using ThreadPool is easy with AndroExecutor - Android library for easy multi-threading in Android.
@@ -140,6 +140,6 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	implementation 'com.github.tsuryo:AndroExecutor:1.1'
+	implementation 'com.github.tsuryo:AndroExecutor:1.2'
 }
 ```
