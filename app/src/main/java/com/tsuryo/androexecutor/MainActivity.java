@@ -1,4 +1,4 @@
-package com.tsuryo.androidd;
+package com.tsuryo.androexecutor;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.tsuryo.android.R;
@@ -18,9 +19,9 @@ import com.tsuryo.androthread.UITask;
 
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener {
-    private TextView mTv;
     private AndroExecutor mAndroExecutor;
     private Button mButton;
+    private LinearLayout mLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void initUiComponents() {
-        mTv = findViewById(R.id.tv);
+        mLayout = findViewById(R.id.layout);
         mButton = findViewById(R.id.button);
         mButton.setOnClickListener(this);
     }
@@ -62,11 +63,13 @@ public class MainActivity extends AppCompatActivity
 
     private void generateFiles() {
         for (int i = 0; i < 150; i++) {
+            TextView tv = new TextView(this);
+            mLayout.addView(tv);
             /**
              * Init the task that will run on the UI/Main Thread
              * Using UITask.class
              * */
-            UITask uiTask = new UpdateTvTask(mTv, "Started");
+            UITask uiTask = new UpdateTvTask(tv, "Started");
             /**
              * Init the task that will run on a worker thread/ background
              * Using BackgroundTask.class

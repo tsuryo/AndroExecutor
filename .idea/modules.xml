@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroExecutor.iml" filepath="$PROJECT_DIR$/AndroExecutor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androexecutor/androexecutor.iml" filepath="$PROJECT_DIR$/androexecutor/androexecutor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroExecutor.iml" filepath="$PROJECT_DIR$/AndroExecutor.iml" group="AndroExecutor" />
+      <module fileurl="file://$PROJECT_DIR$/androexecutor/androexecutor.iml" filepath="$PROJECT_DIR$/androexecutor/androexecutor.iml" group="AndroExecutor/androexecutor" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AndroExecutor/app" />
     </modules>
   </component>
 </project>

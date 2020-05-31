@@ -1,4 +1,4 @@
-package com.tsuryo.androidd;
+package com.tsuryo.androexecutor;
 
 import android.widget.TextView;
 
